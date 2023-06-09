@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Venta de Productos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/flick/jquery-ui.min.css">
+  <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h2>Venta de productos</h2>
+<p align=left> <img src="imagenes/ventas.png" width="70" height="70"> </p>
+
+
+  <form class="form-horizontal" action="insertar.php" role="form" method="POST">
+
+
+    <div class="input">
+      <label>Ingresa el valor del producto:</label>
+      <input type="text" class="form-control"  name="code" placeholder="Ingrese el codigo del producto">
+    </div>
+
+    <b><label for="valor">Ingresa el valor del producto:</label></b>
+    <input type="text" class="form-control" id="a" placeholder="Valor de Producto" name="a">
+    <br>
+
+
+    <div class="input">
+      <label>Valor de la venta:</label>
+      <input type="text" class="form-control" name="$venta" placeholder="Ingrese el valor de la venta">
+    </div>  
+ 
+    <div class="input">
+      <label>Cantidad vendida:</label>
+      <input type="text" class="form-control" name="cantidad" placeholder="Ingrese la cantidad de producto">
+    </div>
+ 
+ <p></p>
+ <p></p>
+
+<p></p>
+<p></p>
+
+    <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
+  </form>
+
+</div>
+
+<p></p>
+<p></p>
+
+</body>
+</html>

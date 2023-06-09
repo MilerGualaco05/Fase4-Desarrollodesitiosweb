@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Compra de Productos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<div class="container">
+	
+	<h1>Compra de Productos</h1>
+
+<script>
+
+function calcular(){
+    
+    var a = document.cp.a.value;
+    var b = document.cp.b.value;
+    var c = document.cp.c.value;
+    var x = document.cp.d.value;
+    var y = document.cp.e.value;
+
+    x=(parseFloat(a)*(parseFloat(b)/100))+(parseFloat(a)*(parseFloat(c)/100))+parseFloat(a);
+    document.cp.d.value=x;
+
+	y=parseFloat(a)*(parseFloat(b)/100);
+    document.cp.e.value=y;
+}
+</script> 
+
+<form name="cp" action="script.html" method="POST">
+    <div class="form-group">
+    	
+    <b><label for="valor">Ingresa el valor de la compra:</label></b>
+    <input type="text" class="form-control" id="a" placeholder="Valor de la compra" name="a">
+    <br>
+
+    <b><label for="porcentaje">Ingresa el Porcentaje de Utilidad:</label></b>
+    <input type="text" class="form-control" id="b" placeholder="Porcentaje de Utilidad" name="b">
+    <br>
+
+    <b><label for="iva">Ingresa el Porcentaje de IVA:</label></b>
+    <input type="text" class="form-control" id="c" placeholder="Porcentaje de IVA" name="c">
+    <br><br>
+
+	<input type="Button" name="" value="CALCULAR" onclick="calcular()" class="btn btn-primary">
+	<br>
+
+ 	<b><label for="resultado">Valor de la venta:</label></b>
+ 	<input type="text" class="form-control" id="d" name="d" placeholder="Valor de la Venta">
+	<br>
+
+	<b><label for="resultado">Valor de la Ganancia:</label></b>
+ 	<input type="text" class="form-control" id="e" name="e" placeholder="Ganancia">
+
+	</div>
+  </form>
+</div>
+</body>
+</html>
